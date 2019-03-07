@@ -4784,10 +4784,10 @@ gatsby-remark-smartypants@^2.0.8:
     retext-smartypants "^3.0.0"
     unist-util-visit "^1.3.0"
 
-gatsby-remark-yuque-images@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-yuque-images/-/gatsby-remark-yuque-images-0.2.1.tgz#e4e0e9bdfea31d560cf545d3e53e6ff6c5d06cba"
-  integrity sha512-CEnvdI2adx5nfaeDbAlxvuLc/7ctpZIK95oo9pnMM6H/AjUdDdvCvkYQEfvbv3DwA0QA71dnNpbj1drCYWb8Kg==
+gatsby-remark-yuque-images@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-yuque-images/-/gatsby-remark-yuque-images-0.2.2.tgz#b067556fc752c41ef5d38992c2de0913164ef0ff"
+  integrity sha512-xodbzJd3l8FX4ky6TJSK9bGFGNzBgGHKcPHuZe+JaT/KahPK/AFe7ezQUMI9H19gaa30O8KJIETtybRUADy7iQ==
   dependencies:
     "@babel/runtime" "^7.3.4"
     axios "^0.18.0"
@@ -4865,10 +4865,10 @@ gatsby-transformer-sharp@^2.1.15:
     probe-image-size "^4.0.0"
     sharp "^0.21.3"
 
-gatsby@^2.1.23:
-  version "2.1.23"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.1.23.tgz#f228e54b728ce48bcee38457cff40dd5604db2ab"
-  integrity sha512-jS9X+hAOmITQl5S5Q91oeom0gG+UViKvzJXDWJjpOC6uUJwfXWXRkTNv9XZrIcNT4AZBDDBa70AYqUVLly8yZg==
+gatsby@^2.1.24:
+  version "2.1.24"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.1.24.tgz#0522989cd4e0e6fc84e02fd2f97cf62cb8ef290b"
+  integrity sha512-S2ghkROyAxAPZv31y9SxPDh1uEcrvK9De157GWLj+Ljx+Iahdjl+gSh0pntmooik5BlEyYBhdBhD0MDliBMogg==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
