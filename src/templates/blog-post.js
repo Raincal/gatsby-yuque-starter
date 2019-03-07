@@ -1,24 +1,23 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
+    const post = this.props.data.yuqueDoc
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
+          title={post.title}
+          description={post.description}
         />
-        <h1>{post.frontmatter.title}</h1>
+        <h1>{post.title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
@@ -27,15 +26,14 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date}
+          {post.created_at}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div dangerouslySetInnerHTML={{ __html: post.childMarkdownRemark.html }} />
         <hr
           style={{
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
 
         <ul
           style={{
@@ -48,15 +46,15 @@ class BlogPostTemplate extends React.Component {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link to={`/post/${previous.slug}`} rel="prev">
+                ← {previous.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+              <Link to={`/post/${next.slug}`} rel="next">
+                {next.title} →
               </Link>
             )}
           </li>
@@ -76,14 +74,13 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        description
+    yuqueDoc(slug: { eq: $slug }) {
+      title
+      slug
+      description
+      created_at(formatString: "MMMM DD, YYYY")
+      childMarkdownRemark {
+        html
       }
     }
   }

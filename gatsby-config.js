@@ -1,32 +1,37 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Gatsby Yuque Starter`,
+    author: `Raincal`,
+    description: `海阔凭鱼跃，天高语雀飞`,
+    siteUrl: `https://yuque.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      github: `Raincal`
     },
   },
-  plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
-    {
+  plugins: [{
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    }, {
+      resolve: `gatsby-source-yuque`,
+      options: {
+        login: `yuque`,
+        repo: `blog`,
+        mdNameFormat: `slug`,
       },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-yuque-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -53,12 +58,12 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    `gatsby-plugin-feed`,
+    // `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Gatsby Yuque Starter`,
+        short_name: `Yuque`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
