@@ -1,9 +1,9 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={['blog', 'gatsby', 'javascript', 'react']}
         />
         {posts.map(({ node }) => {
           const title = node.title || node.slug
@@ -26,7 +26,7 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={`/post/${node.slug}`}>
+                <Link style={{ boxShadow: 'none' }} to={`/post/${node.slug}`}>
                   {title}
                 </Link>
               </h3>
@@ -46,7 +46,7 @@ class BlogIndex extends React.Component {
 
 export default BlogIndex
 
-export const pageQuery = graphql `
+export const pageQuery = graphql`
   query {
     site {
       siteMetadata {

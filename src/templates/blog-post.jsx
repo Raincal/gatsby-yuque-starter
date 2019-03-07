@@ -1,9 +1,9 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -13,22 +13,21 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.title}
-          description={post.description}
-        />
+        <SEO title={post.title} description={post.description} />
         <h1>{post.title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
-            display: `block`,
+            display: 'block',
             marginBottom: rhythm(1),
             marginTop: rhythm(-1),
           }}
         >
           {post.created_at}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.childMarkdownRemark.html }} />
+        <div
+          dangerouslySetInnerHTML={{ __html: post.childMarkdownRemark.html }}
+        />
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -37,10 +36,10 @@ class BlogPostTemplate extends React.Component {
 
         <ul
           style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'space-between',
+            listStyle: 'none',
             padding: 0,
           }}
         >

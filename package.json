@@ -2,7 +2,7 @@
   "name": "gatsby-yuque-starter",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Yuque",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Raincal <cyj94228@gmail.com>",
   "bugs": {
     "url": "https://github.com/Raincal/gatsby-yuque-starter/issues"
@@ -38,6 +38,8 @@
     "typography-theme-wordpress-2016": "^0.16.18"
   },
   "devDependencies": {
+    "eslint": "^5.15.1",
+    "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.16.4"
   },
   "homepage": "https://github.com/Raincal/gatsby-yuque-starter#readme",
@@ -54,6 +56,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
+    "format:code": "npm run lint:code -- --fix",
+    "lint:code": "eslint --ignore-path .gitignore --ext .js,.jsx .",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "rm -rf .cache public"
