@@ -2,7 +2,7 @@
   "name": "gatsby-yuque-starter",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Yuque",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Raincal <cyj94228@gmail.com>",
   "bugs": {
     "url": "https://github.com/Raincal/gatsby-yuque-starter/issues"

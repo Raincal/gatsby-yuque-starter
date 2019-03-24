@@ -51,13 +51,65 @@ module.exports = {
   },
   'gatsby-transformer-sharp',
   'gatsby-plugin-sharp',
+  // {
+  //   resolve: 'gatsby-plugin-google-analytics',
+  //   options: {
+  //     //trackingId: `ADD YOUR TRACKING ID HERE`,
+  //   },
+  // },
   {
-    resolve: 'gatsby-plugin-google-analytics',
+    resolve: 'gatsby-plugin-feed',
     options: {
-      //trackingId: `ADD YOUR TRACKING ID HERE`,
+      query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+      feeds: [
+        {
+          serialize: ({ query: { site, allYuqueDoc } }) => {
+            return allYuqueDoc.edges.map(edge => {
+              return Object.assign({}, edge.node.childMarkdownRemark.frontmatter, {
+                description: edge.node.custom_description,
+                date: edge.node.created_at,
+                url: site.siteMetadata.siteUrl + 'post/' + edge.node.slug,
+                guid: site.siteMetadata.siteUrl + 'post/' + edge.node.slug,
+                custom_elements: [{ 'content:encoded': edge.node.childMarkdownRemark.html }],
+              })
+            })
+          },
+          query: `
+            {
+              allYuqueDoc {
+                edges {
+                  node {
+                    slug
+                    custom_description
+                    created_at
+                    childMarkdownRemark {
+                      frontmatter {
+                        title
+                      }
+                      html
+                    }
+                  }
+                }
+              }
+            }
+            `,
+          output: '/rss.xml',
+          title: 'Gatsby Yuque Starter',
+        },
+      ],
     },
   },
-  // `gatsby-plugin-feed`,
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
