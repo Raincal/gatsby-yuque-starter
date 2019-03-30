@@ -38,7 +38,7 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.16.4"
   },
