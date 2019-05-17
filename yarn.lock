@@ -820,7 +820,7 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2":
   version "7.3.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.3.4.tgz#73d12ba819e365fcf7fd152aed56d6df97d21c83"
   integrity sha512-IvfvnMdSaLBateu0jfsYIpZTxAc2cKEXEMiezGGN75QcBcecDUKd3PgLAncT0oOgxKy8dd8hrJKj9MfzgfZd6g==
@@ -3251,10 +3251,10 @@ date-now@^0.1.4:
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
   integrity sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=
 
-dayjs@^1.8.9:
-  version "1.8.9"
-  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.9.tgz#8b5fda2f995ff5f29705894e1d23240f7f674f61"
-  integrity sha512-/LPzoQ77NiXf566p5babPBkqegpJ94koAQ0vUfkcfWYcuvzOTgr+N9V4IOnQ3H05Su/9dpFNOV1iPvEhAsRscw==
+dayjs@^1.8.14:
+  version "1.8.14"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.14.tgz#43e4f62830c2c3342c3fcd25934dc9162dbe6f38"
+  integrity sha512-AVhDmRTe541iWirnoeFSSDDGvCT6HWaNQ4z2WmmzXMGZj6ph6ydao2teKq/eUtR43GPJXlYFD+C/SotG1P9wUQ==
 
 debug@2, debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.3, debug@^2.6.6, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
@@ -5087,18 +5087,18 @@ gatsby-source-filesystem@^2.0.36:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
-gatsby-source-yuque@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/gatsby-source-yuque/-/gatsby-source-yuque-0.0.7.tgz#faee08cce8754451a38978280de51327b9eb5956"
-  integrity sha512-wp/EmuyGmS9oa4g5zW++ExtoKb+Zx5+MfbW2G+5SPlZhCuLnCErNkhtm17PH8uHFbpPEjU18aC/uGUURJolKDw==
+gatsby-source-yuque@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/gatsby-source-yuque/-/gatsby-source-yuque-0.0.8.tgz#e0a5ee347d4d5a64db161ff1b92eb14dfdbd88dc"
+  integrity sha512-esWpnQqlHQjzEGvLxkMuuufvWpr078lZnE6bpsiKeHeN3mJO1Kru8i+PILvrz9nIDxg0y8/i6hw5cR3BAduktA==
   dependencies:
-    "@babel/runtime" "^7.3.4"
+    "@babel/runtime" "^7.4.4"
     axios "^0.18.0"
-    dayjs "^1.8.9"
+    dayjs "^1.8.14"
     debug "^4.1.1"
     gray-matter "^4.0.2"
     html-entities "^1.2.1"
-    queue "^6.0.0"
+    queue "^6.0.1"
 
 gatsby-telemetry@^1.0.9:
   version "1.0.9"
@@ -9423,10 +9423,10 @@ querystringify@^2.0.0:
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.0.tgz#7ded8dfbf7879dcc60d0a644ac6754b283ad17ef"
   integrity sha512-sluvZZ1YiTLD5jsqZcDmFyV2EwToyXZBfpoVOmktMmW+VEnhgakFHnasVph65fOjGPTWN0Nw3+XQaSeMayr0kg==
 
-queue@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/queue/-/queue-6.0.0.tgz#6e898c3e4630e7b6fd0ba87ac84de1ba4b284e1e"
-  integrity sha512-gpUbFleAxTje0QND1EtRXJYvyhykgJnScMeaC9MMn+TEXWjcDSHAg7axcnDIwKrPosK7y84Y8AKX9GAc95xyAA==
+queue@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/queue/-/queue-6.0.1.tgz#abd5a5b0376912f070a25729e0b6a7d565683791"
+  integrity sha512-AJBQabRCCNr9ANq8v77RJEv73DPbn55cdTb+Giq4X0AVnNVZvMHlYp7XlQiN+1npCZj1DuSmaA2hYVUUDgxFDg==
   dependencies:
     inherits "~2.0.3"
 
