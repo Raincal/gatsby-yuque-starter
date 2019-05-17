@@ -43,14 +43,14 @@ module.exports = {
           wrapperStyle: 'margin-bottom: 1.0725rem',
         },
       },
-      'gatsby-remark-prismjs',
-      'gatsby-remark-copy-linked-files',
-      'gatsby-remark-smartypants',
+        'gatsby-remark-prismjs',
+        'gatsby-remark-copy-linked-files',
+        'gatsby-remark-smartypants',
       ],
     },
   },
-  'gatsby-transformer-sharp',
-  'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
   // {
   //   resolve: 'gatsby-plugin-google-analytics',
   //   options: {
@@ -87,7 +87,7 @@ module.exports = {
           },
           query: `
             {
-              allYuqueDoc {
+              allYuqueDoc(sort: { fields: [created_at], order: DESC }) {
                 edges {
                   node {
                     slug
@@ -122,8 +122,8 @@ module.exports = {
       icon: 'content/assets/gatsby-icon.png',
     },
   },
-  'gatsby-plugin-offline',
-  'gatsby-plugin-react-helmet',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-react-helmet',
   {
     resolve: 'gatsby-plugin-typography',
     options: {

@@ -12,7 +12,7 @@ exports.createPages = ({
   return graphql(
     `
       {
-        allYuqueDoc {
+        allYuqueDoc(sort: { fields: [created_at], order: DESC }) {
           edges {
             node {
               title
