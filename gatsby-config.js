@@ -28,13 +28,13 @@ module.exports = {
       plugins: [{
         resolve: 'gatsby-remark-yuque-images',
         options: {
-          maxWidth: 590,
+          maxWidth: 768,
         },
       },
       {
         resolve: 'gatsby-remark-images',
         options: {
-          maxWidth: 590,
+          maxWidth: 768,
         },
       },
       {
@@ -117,18 +117,21 @@ module.exports = {
       short_name: 'Yuque',
       start_url: '/',
       background_color: '#ffffff',
-      theme_color: '#663399',
+      theme_color: '#48bb78',
       display: 'minimal-ui',
-      icon: 'content/assets/gatsby-icon.png',
+      icon: 'content/assets/yuque-icon.png',
     },
+  },
+  'gatsby-plugin-postcss',
+  {
+    resolve: 'gatsby-plugin-purgecss',
+    options: {
+      tailwind: true,
+      whitelist: ['blockquote', 'ol'],
+      purgeOnly: ['src/css/style.css']
+    }
   },
   'gatsby-plugin-offline',
   'gatsby-plugin-react-helmet',
-  {
-    resolve: 'gatsby-plugin-typography',
-    options: {
-      pathToConfigModule: 'src/utils/typography',
-    },
-  },
   ],
 }

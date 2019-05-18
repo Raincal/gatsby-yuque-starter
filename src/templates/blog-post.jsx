@@ -3,7 +3,6 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -14,50 +13,33 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.title} description={post.description} />
-        <h1>{post.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.created_at}
-        </p>
-        <div
-          dangerouslySetInnerHTML={{ __html: post.childMarkdownRemark.html }}
-        />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <div className='max-w-3xl md:mx-auto w-full'>
+          <h1 className='text-2xl sm:text-4xl mt-4 sm:mt-0 leading-tight'>{post.title}</h1>
+          <p className='mb-6'>
+            {post.created_at}
+          </p>
+          <div
+            className='content'
+            dangerouslySetInnerHTML={{ __html: post.childMarkdownRemark.html }}
+          />
 
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={`/post/${previous.slug}`} rel="prev">
-                ← {previous.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={`/post/${next.slug}`} rel="next">
-                {next.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+          <ul className='flex justify-between py-8 border-t border-b mt-8'>
+            <li className='w-1/2 px-3 -ml-3'>
+              {previous && (
+                <Link to={`/post/${previous.slug}`} rel="prev">
+                  <h6 className='sm:text-base mb-0 hover:text-gray-800'>← {previous.title}</h6>
+                </Link>
+              )}
+            </li>
+            <li className='w-1/2 px-3 -mr-3 text-right'>
+              {next && (
+                <Link to={`/post/${next.slug}`} rel="next">
+                  <h6 className='sm:text-base mb-0 hover:text-gray-800'>{next.title} →</h6>
+                </Link>
+              )}
+            </li>
+          </ul>
+        </div>
       </Layout>
     )
   }
