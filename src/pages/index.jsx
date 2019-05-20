@@ -59,7 +59,7 @@ export const pageQuery = graphql`
           slug
           cover
           custom_description
-          created_at(formatString: "MMMM DD, YYYY")
+          created_at(formatString: "YYYY-MM-DD")
         }
       }
     }

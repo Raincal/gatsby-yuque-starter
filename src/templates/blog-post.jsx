@@ -12,7 +12,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title={post.title} description={post.description} />
+        <SEO title={post.title} description={post.custom_description} />
         <div className='max-w-3xl md:mx-auto w-full'>
           <h1 className='text-2xl sm:text-4xl mt-4 sm:mt-0 leading-tight'>{post.title}</h1>
           <p className='mb-6'>
@@ -58,8 +58,8 @@ export const pageQuery = graphql`
     yuqueDoc(slug: { eq: $slug }) {
       title
       slug
-      description
-      created_at(formatString: "MMMM DD, YYYY")
+      custom_description
+      created_at(formatString: "YYYY-MM-DD")
       childMarkdownRemark {
         html
       }
