@@ -13,28 +13,32 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.title} description={post.custom_description} />
-        <div className='max-w-3xl md:mx-auto w-full'>
-          <h1 className='text-2xl sm:text-4xl mt-4 sm:mt-0 leading-tight'>{post.title}</h1>
-          <p className='mb-6'>
-            {post.created_at}
-          </p>
+        <div className="max-w-3xl md:mx-auto w-full">
+          <h1 className="text-2xl sm:text-4xl mt-4 sm:mt-0 leading-tight">
+            {post.title}
+          </h1>
+          <p className="mb-6">{post.created_at}</p>
           <div
-            className='content'
+            className="content"
             dangerouslySetInnerHTML={{ __html: post.childMarkdownRemark.html }}
           />
 
-          <ul className='flex justify-between py-8 border-t border-b mt-8'>
-            <li className='w-1/2 px-3 -ml-3'>
+          <ul className="flex justify-between py-8 border-t border-b mt-8">
+            <li className="w-1/2 px-3 -ml-3">
               {previous && (
                 <Link to={`/post/${previous.slug}`} rel="prev">
-                  <h6 className='sm:text-base mb-0 hover:text-gray-800'>← {previous.title}</h6>
+                  <h6 className="sm:text-base mb-0 hover:text-gray-800">
+                    ← {previous.title}
+                  </h6>
                 </Link>
               )}
             </li>
-            <li className='w-1/2 px-3 -mr-3 text-right'>
+            <li className="w-1/2 px-3 -mr-3 text-right">
               {next && (
                 <Link to={`/post/${next.slug}`} rel="next">
-                  <h6 className='sm:text-base mb-0 hover:text-gray-800'>{next.title} →</h6>
+                  <h6 className="sm:text-base mb-0 hover:text-gray-800">
+                    {next.title} →
+                  </h6>
                 </Link>
               )}
             </li>
