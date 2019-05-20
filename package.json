@@ -8,7 +8,7 @@
     "url": "https://github.com/Raincal/gatsby-yuque-starter/issues"
   },
   "dependencies": {
-    "gatsby": "^2.5.6",
+    "gatsby": "^2.5.7",
     "gatsby-image": "^2.1.0",
     "gatsby-plugin-feed": "^2.2.0",
     "gatsby-plugin-google-analytics": "^2.0.20",
@@ -24,7 +24,7 @@
     "gatsby-remark-responsive-iframe": "^2.1.1",
     "gatsby-remark-smartypants": "^2.0.9",
     "gatsby-remark-yuque-images": "^0.2.5",
-    "gatsby-source-filesystem": "^2.0.36",
+    "gatsby-source-filesystem": "^2.0.37",
     "gatsby-source-yuque": "^0.0.8",
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.19",
