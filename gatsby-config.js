@@ -1,9 +1,11 @@
+const siteConfig = require('./config.js')
+
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Yuque Starter',
-    author: 'Raincal',
-    description: '海阔凭鱼跃，天高语雀飞',
-    siteUrl: 'https://yuque.netlify.com/',
+    siteUrl: siteConfig.url,
+    title: siteConfig.title,
+    subtitle: siteConfig.subtitle,
+    author: siteConfig.author,
     social: {
       github: 'Raincal'
     },
@@ -19,8 +21,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-yuque',
       options: {
-        login: 'yuque',
-        repo: 'blog',
+        login: siteConfig.yuque.login,
+        repo: siteConfig.yuque.repo,
         mdNameFormat: 'slug',
       },
     },
@@ -53,12 +55,12 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    // {
-    //   resolve: 'gatsby-plugin-google-analytics',
-    //   options: {
-    //     //trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: siteConfig.googleAnalyticsId,
+      },
+    },
     {
       resolve: 'gatsby-plugin-feed',
       options: {
@@ -107,7 +109,7 @@ module.exports = {
             }
             `,
             output: '/rss.xml',
-            title: 'Gatsby Yuque Starter',
+            title: siteConfig.title,
           },
         ],
       },

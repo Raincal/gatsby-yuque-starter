@@ -10,7 +10,7 @@ const SEO = ({ description, lang, meta, title }) => {
         site {
           siteMetadata {
             title
-            description
+            subtitle
             author
           }
         }
@@ -18,7 +18,7 @@ const SEO = ({ description, lang, meta, title }) => {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.subtitle
 
   return (
     <Helmet

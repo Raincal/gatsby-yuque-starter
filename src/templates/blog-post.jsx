@@ -52,7 +52,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
       }
     }
     yuqueDoc(slug: { eq: $slug }) {
