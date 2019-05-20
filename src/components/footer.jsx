@@ -9,6 +9,7 @@ const Footer = () => (
       rel="noopener noreferrer"
       href="https://www.gatsbyjs.org"
     >
+      {' '}
       Gatsby
     </a>
   </footer>
