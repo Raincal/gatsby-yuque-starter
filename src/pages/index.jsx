@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { rhythm } from '../utils/typography'
+import Cover from '../components/cover'
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,32 +13,34 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title="All posts"
-          keywords={['blog', 'gatsby', 'javascript', 'react']}
-        />
-        {posts.map(({ node }) => {
-          const title = node.title || node.slug
-          return (
-            <div key={node.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
+        <SEO title="All posts" />
+        <div className="sm:px-10 sm:py-2 sm:border border-solid border-gray-300 sm:shadow">
+          {posts.map(({ node }) => {
+            const title = node.title || node.slug
+            return (
+              <div
+                key={node.slug}
+                className="post flex justify-between flex-col-reverse sm:flex-row py-4 border-b border-solid border-gray-300"
               >
-                <Link style={{ boxShadow: 'none' }} to={`/post/${node.slug}`}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.created_at}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.custom_description,
-                }}
-              />
-            </div>
-          )
-        })}
+                <div>
+                  <h3 className="font-medium mb-0">
+                    <Link to={`/post/${node.slug}`}>{title}</Link>
+                  </h3>
+                  <div className="text-sm my-2 text-gray-700">
+                    {node.created_at}
+                  </div>
+                  <p
+                    className="text-gray-600"
+                    dangerouslySetInnerHTML={{
+                      __html: node.custom_description,
+                    }}
+                  />
+                </div>
+                <Cover post={node} />
+              </div>
+            )
+          })}
+        </div>
       </Layout>
     )
   }
@@ -58,8 +60,9 @@ export const pageQuery = graphql`
         node {
           title
           slug
+          cover
           custom_description
-          created_at(formatString: "MMMM DD, YYYY")
+          created_at(formatString: "YYYY-MM-DD")
         }
       }
     }
