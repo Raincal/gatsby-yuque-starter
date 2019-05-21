@@ -6,9 +6,6 @@ module.exports = {
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
     author: siteConfig.author,
-    social: {
-      github: 'Raincal'
-    },
   },
   plugins: [
     {
