@@ -83,8 +83,8 @@ module.exports = {
                 return Object.assign({}, edge.node.childMarkdownRemark.frontmatter, {
                   description: edge.node.custom_description,
                   date: edge.node.created_at,
-                  url: site.siteMetadata.siteUrl + 'post/' + edge.node.slug,
-                  guid: site.siteMetadata.siteUrl + 'post/' + edge.node.slug,
+                  url: site.siteMetadata.siteUrl + '/post/' + edge.node.slug,
+                  guid: site.siteMetadata.siteUrl + '/post/' + edge.node.slug,
                   custom_elements: [{ 'content:encoded': edge.node.childMarkdownRemark.html }],
                 })
               })
