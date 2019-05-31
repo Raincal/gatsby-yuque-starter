@@ -23,7 +23,7 @@
     "gatsby-remark-responsive-iframe": "^2.1.1",
     "gatsby-remark-smartypants": "^2.0.9",
     "gatsby-remark-yuque-images": "^0.2.5",
-    "gatsby-source-filesystem": "^2.0.37",
+    "gatsby-source-filesystem": "^2.0.38",
     "gatsby-source-yuque": "^0.0.8",
     "gatsby-transformer-remark": "^2.3.12",
     "postcss-nested": "^4.1.2",
