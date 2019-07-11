@@ -36,7 +36,7 @@
     "eslint": "^6.0.1",
     "eslint-plugin-react": "^7.14.2",
     "prettier": "^1.18.2",
-    "tailwindcss": "^1.0.4"
+    "tailwindcss": "^1.0.5"
   },
   "homepage": "https://github.com/Raincal/gatsby-yuque-starter#readme",
   "keywords": [
