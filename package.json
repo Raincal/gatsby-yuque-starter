@@ -25,7 +25,7 @@
     "gatsby-remark-yuque-images": "^0.2.5",
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-source-yuque": "^0.1.0",
-    "gatsby-transformer-remark": "^2.6.6",
+    "gatsby-transformer-remark": "^2.6.7",
     "postcss-nested": "^4.1.2",
     "prismjs": "^1.16.0",
     "react": "^16.8.6",
