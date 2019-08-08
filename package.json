@@ -28,8 +28,8 @@
     "gatsby-transformer-remark": "^2.6.12",
     "postcss-nested": "^4.1.2",
     "prismjs": "^1.17.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
