@@ -5425,6 +5425,15 @@ gatsby-graphiql-explorer@^0.2.3:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
+gatsby-image@^2.2.8:
+  version "2.2.8"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.2.8.tgz#edebdda1e4b823735693737d68855a7fb66cbde5"
+  integrity sha512-R0hc37xf03Bqi51TlRHuu6KB5sFiXzHx0tQotml8TeFXu1k5yvV13D8fHhlHCZQq5zJe4KHx0rGfAprzb4s1fA==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    object-fit-images "^3.2.4"
+    prop-types "^15.6.1"
+
 gatsby-link@^2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.2.5.tgz#d2d2a1a75447b622861e5835cd612ae1de80b749"
@@ -5652,10 +5661,10 @@ gatsby-source-filesystem@^2.1.9:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
-gatsby-source-yuque@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-yuque/-/gatsby-source-yuque-0.1.0.tgz#3f800798dfa17749c179a8c0bd73e42c83fe2542"
-  integrity sha512-y9rQdxYQQTbkVSguqdzGDFZ/odNxHCyV5Myj5b/x+uvaqyIUiI4W9OAvwdMXJedjnvwvkYi8TyEij1wilbOayw==
+gatsby-source-yuque@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-yuque/-/gatsby-source-yuque-0.2.0.tgz#bceed9bff7624377a6b6db40415dbe72f98412e5"
+  integrity sha512-Dmr4nNXTliefo31xmweGtVi+JycG7v2corLzGM+0eg2U6h2b+R2RP0zRh/hM9HAVUEQuTGRrQ2mrCsHJjRv56A==
   dependencies:
     "@babel/runtime" "^7.4.5"
     axios "^0.19.0"
@@ -5715,6 +5724,19 @@ gatsby-transformer-remark@^2.6.14:
     unist-util-remove-position "^1.1.2"
     unist-util-select "^1.5.0"
     unist-util-visit "^1.3.0"
+
+gatsby-transformer-sharp@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.2.6.tgz#38da2c4a9e3acd7a20411cf9febf97df2db8081e"
+  integrity sha512-yRHEZrVPaP2oeccAPyzBff3xxXExsg8s7jFXsmRAbQVTYtP0PLmSJ3x59t3kbJZqbL4kTZhPrdsqg3KmGoAeTA==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    bluebird "^3.5.0"
+    fs-extra "^7.0.0"
+    potrace "^2.1.1"
+    probe-image-size "^4.0.0"
+    semver "^5.6.0"
+    sharp "^0.22.1"
 
 gatsby@^2.13.67:
   version "2.13.67"
@@ -8810,6 +8832,11 @@ object-copy@^0.1.0:
     copy-descriptor "^0.1.0"
     define-property "^0.2.5"
     kind-of "^3.0.3"
+
+object-fit-images@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/object-fit-images/-/object-fit-images-3.2.4.tgz#6c299d38fdf207746e5d2d46c2877f6f25d15b52"
+  integrity sha512-G+7LzpYfTfqUyrZlfrou/PLLLAPNC52FTy5y1CBywX+1/FkxIloOyQXBmZ3Zxa2AWO+lMF0JTuvqbr7G5e5CWg==
 
 object-hash@^1.1.4:
   version "1.3.1"

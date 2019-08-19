@@ -60,9 +60,15 @@ export const pageQuery = graphql`
         node {
           title
           slug
-          cover
           custom_description
           created_at(formatString: "YYYY-MM-DD")
+          cover {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }
