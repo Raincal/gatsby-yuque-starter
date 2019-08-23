@@ -8,7 +8,7 @@
     "url": "https://github.com/Raincal/gatsby-yuque-starter/issues"
   },
   "dependencies": {
-    "gatsby": "^2.13.76",
+    "gatsby": "^2.13.77",
     "gatsby-image": "^2.2.12",
     "gatsby-plugin-feed": "^2.3.7",
     "gatsby-plugin-google-analytics": "^2.1.9",
