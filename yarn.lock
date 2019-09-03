@@ -4012,10 +4012,10 @@ date-now@^0.1.4:
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
   integrity sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=
 
-dayjs@^1.8.14:
-  version "1.8.14"
-  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.14.tgz#43e4f62830c2c3342c3fcd25934dc9162dbe6f38"
-  integrity sha512-AVhDmRTe541iWirnoeFSSDDGvCT6HWaNQ4z2WmmzXMGZj6ph6ydao2teKq/eUtR43GPJXlYFD+C/SotG1P9wUQ==
+dayjs@^1.8.16:
+  version "1.8.16"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.16.tgz#2a3771de537255191b947957af2fd90012e71e64"
+  integrity sha512-XPmqzWz/EJiaRHjBqSJ2s6hE/BUoCIHKgdS2QPtTQtKcS9E4/Qn0WomoH1lXanWCzri+g7zPcuNV4aTZ8PMORQ==
 
 debug@2, debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.3, debug@^2.6.6, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
@@ -5984,14 +5984,14 @@ gatsby-source-filesystem@^2.1.18:
     valid-url "^1.0.9"
     xstate "^3.3.3"
 
-gatsby-source-yuque@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-yuque/-/gatsby-source-yuque-0.2.0.tgz#bceed9bff7624377a6b6db40415dbe72f98412e5"
-  integrity sha512-Dmr4nNXTliefo31xmweGtVi+JycG7v2corLzGM+0eg2U6h2b+R2RP0zRh/hM9HAVUEQuTGRrQ2mrCsHJjRv56A==
+gatsby-source-yuque@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-yuque/-/gatsby-source-yuque-0.2.1.tgz#82cffd04c17da08fb8a8610970e062f7cf65c202"
+  integrity sha512-tAFsXZfN07yq1n0YPscFBWhXexzzZWr8F/Pcpj0LwDhp7isFs8dcU1XJOM8VX6YKhMXpj3+pCjtZoOd3UisU3g==
   dependencies:
-    "@babel/runtime" "^7.4.5"
+    "@babel/runtime" "^7.5.5"
     axios "^0.19.0"
-    dayjs "^1.8.14"
+    dayjs "^1.8.16"
     debug "^4.1.1"
     gray-matter "^4.0.2"
     html-entities "^1.2.1"
