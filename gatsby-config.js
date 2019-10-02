@@ -139,6 +139,10 @@ module.exports = {
         purgeOnly: ['src/css/style.css']
       }
     },
+    {
+      resolve: '@bundle-analyzer/gatsby-plugin',
+      options: { token: '8083d17147ec9ccd475e3d8603cdfadadd025cff' },
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
   ],
