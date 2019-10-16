@@ -18,7 +18,7 @@
     "gatsby-plugin-postcss": "^2.1.13",
     "gatsby-plugin-purgecss": "^4.0.1",
     "gatsby-plugin-react-helmet": "^3.1.13",
-    "gatsby-plugin-sharp": "^2.2.31",
+    "gatsby-plugin-sharp": "^2.2.32",
     "gatsby-remark-copy-linked-files": "^2.1.28",
     "gatsby-remark-images": "^3.1.28",
     "gatsby-remark-prismjs": "^3.3.20",
