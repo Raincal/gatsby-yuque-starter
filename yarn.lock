@@ -6187,10 +6187,10 @@ gatsby-source-filesystem@^2.1.33:
     valid-url "^1.0.9"
     xstate "^4.6.7"
 
-gatsby-source-yuque@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-yuque/-/gatsby-source-yuque-0.2.1.tgz#82cffd04c17da08fb8a8610970e062f7cf65c202"
-  integrity sha512-tAFsXZfN07yq1n0YPscFBWhXexzzZWr8F/Pcpj0LwDhp7isFs8dcU1XJOM8VX6YKhMXpj3+pCjtZoOd3UisU3g==
+gatsby-source-yuque@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/gatsby-source-yuque/-/gatsby-source-yuque-0.2.3.tgz#066ad0be44f50b27dcb7755c95997ce6935e4c43"
+  integrity sha512-ri6yHdYCiRkpulii3MIFBAjE+9FuKhJzrzmBqNhzJJM12oXNdlEcFITm/pP0QoaaeW4yACPPffGMr4bHvRlVag==
   dependencies:
     "@babel/runtime" "^7.5.5"
     axios "^0.19.0"
