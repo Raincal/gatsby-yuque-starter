@@ -62,7 +62,7 @@ export const pageQuery = graphql`
           slug
           custom_description
           created_at(formatString: "YYYY-MM-DD")
-          cover {
+          coverImg {
             childImageSharp {
               fluid {
                 ...GatsbyImageSharpFluid

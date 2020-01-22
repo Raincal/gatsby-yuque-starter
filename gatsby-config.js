@@ -16,13 +16,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/content`,
-        name: 'yuque-images',
-      },
-    },
-    {
       resolve: 'gatsby-source-yuque',
       options: {
         login: siteConfig.yuque.login,
@@ -33,27 +26,28 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [{
-          resolve: 'gatsby-remark-yuque-images',
-          options: {
-            maxWidth: 768,
+        plugins: [
+          {
+            resolve: 'gatsby-remark-yuque-images',
+            options: {
+              maxWidth: 768,
+            },
           },
-        },
-        {
-          resolve: 'gatsby-remark-images',
-          options: {
-            maxWidth: 768,
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 768,
+            },
           },
-        },
-        {
-          resolve: 'gatsby-remark-responsive-iframe',
-          options: {
-            wrapperStyle: 'margin-bottom: 1.0725rem',
+          {
+            resolve: 'gatsby-remark-responsive-iframe',
+            options: {
+              wrapperStyle: 'margin-bottom: 1.0725rem',
+            },
           },
-        },
-        'gatsby-remark-prismjs',
-        'gatsby-remark-copy-linked-files',
-        'gatsby-remark-smartypants',
+          'gatsby-remark-prismjs',
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-smartypants',
         ],
       },
     },
@@ -135,14 +129,14 @@ module.exports = {
       resolve: 'gatsby-plugin-purgecss',
       options: {
         tailwind: true,
-        whitelist: ['blockquote', 'ol'],
+        whitelist: ['blockquote', 'ol', 'hr', 'img'],
         purgeOnly: ['src/css/style.css']
       }
     },
-    {
-      resolve: '@bundle-analyzer/gatsby-plugin',
-      options: { token: '8083d17147ec9ccd475e3d8603cdfadadd025cff' },
-    },
+    // {
+    //   resolve: '@bundle-analyzer/gatsby-plugin',
+    //   options: { token: '8083d17147ec9ccd475e3d8603cdfadadd025cff' },
+    // },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
   ],

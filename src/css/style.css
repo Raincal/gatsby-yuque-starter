@@ -24,12 +24,15 @@ h4 {
 h5, h6 {
   @apply text-sm;
 }
+hr {
+  margin: 18px 0;
+}
 blockquote {
   @apply my-1 pl-4;
   border-left: 3px solid #eee;
 }
 img {
-  @apply max-w-full;
+  @apply max-w-full mx-auto;
 }
 .post:nth-last-child(1) {
   @apply border-0;
