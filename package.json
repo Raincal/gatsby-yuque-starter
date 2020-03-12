@@ -2,7 +2,7 @@
   "name": "gatsby-yuque-starter",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Yuque",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "author": "Raincal <cyj94228@gmail.com>",
   "bugs": {
     "url": "https://github.com/Raincal/gatsby-yuque-starter/issues"
@@ -23,9 +23,9 @@
     "gatsby-remark-prismjs": "^3.3.33",
     "gatsby-remark-responsive-iframe": "^2.2.33",
     "gatsby-remark-smartypants": "^2.1.22",
-    "gatsby-remark-yuque-images": "^1.1.1",
+    "gatsby-remark-yuque-images": "^1.2.0",
     "gatsby-source-filesystem": "^2.1.53",
-    "gatsby-source-yuque": "^0.3.1",
+    "gatsby-source-yuque": "^0.4.0",
     "gatsby-transformer-remark": "^2.6.58",
     "gatsby-transformer-sharp": "^2.3.18",
     "postcss-nested": "^4.2.1",
