@@ -29,7 +29,7 @@
     "gatsby-transformer-remark": "^2.6.58",
     "gatsby-transformer-sharp": "^2.3.18",
     "postcss-nested": "^4.2.1",
-    "prismjs": "^1.19.0",
+    "prismjs": "^1.25.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1"
